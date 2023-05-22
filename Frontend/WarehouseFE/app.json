@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "WarehouseFE",
+    "slug": "WarehouseFE",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
