@@ -1,0 +1,21 @@
+Getting the system ready for app development using Expo CLI
+
+Need to install:
+	- Nodejs: DONE - Version 18.16.0
+	- Git: DONE - Version 2.25.1
+		- Need to set up git username and email
+	- Watchman: DONE - Version 4.9.0
+
+Install Expo
+	- npm add expo: DONE
+
+To Run App:
+	- cd into Desktop/App/Frontend/WarehouseFE
+	- sudo npx expo start
+	- scan QR code using camera - must have expo go app
+
+To Run Flask:
+    - cd into Desktop/App/Backend/WarehouseBE
+    - export FLASK_APP=WarehouseBEAPI.py
+    - WarehouseBEVenv/bin/activate
+    - flask run --host=0.0.0.0
