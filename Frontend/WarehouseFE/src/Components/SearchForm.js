@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { TextInput, View, Text, StyleSheet, TouchableOpacity, } from 'react-native';
+import { TextInput, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+
 
 function SearchForm() {
 
@@ -10,14 +11,14 @@ function SearchForm() {
     })
 
     // data handles
-    const handleModel = (val) => {
+    const handleModelChange = (val) => {
         setData({
             ...data,
             model: val
         })
     }
 
-    const handlePart = (val) => {
+    const handlePartChange = (val) => {
         setData({
             ...data,
             part: val
@@ -72,6 +73,9 @@ function SearchForm() {
                     onChangeText={(val) => handleModelChange(val)}   
                 />
             </View>
+            <View style={styles.partSection}>
+                <Text style={styles.partText}>Part:</Text>
+            </View>
             <TouchableOpacity onPress={() => {submitHandle()}}>
                 <View style={styles.searchButton}>
                     <Text style={styles.searchText}>Search</Text>
@@ -107,6 +111,17 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         marginHorizontal: 10,
         borderRadius: 10
+    },
+    partSection: {
+        marginTop: 15,
+        backgroundColor: 'white',
+        flexDirection: 'row'
+    },
+    partText: {
+        textAlign: 'center',
+        fontSize: 24,
+        fontWeight: '600',
+        marginTop: 10
     },
     searchButton: {
         backgroundColor: 'grey',
