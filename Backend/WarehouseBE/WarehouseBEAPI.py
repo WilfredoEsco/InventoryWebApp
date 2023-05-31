@@ -3,7 +3,7 @@ from WarehouseBEDatabase import *
 import json
 
 Debug = True
-Host = '127.0.0.1'
+Host = '0.0.0.0'
 Port = 5000
 
 app = Flask(__name__)
