@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
         width: 125,
         borderRadius: 10,
         marginLeft: 225,
-        marginTop: 215
+        marginTop: 200
     },
     searchText: {
         color: 'white',
