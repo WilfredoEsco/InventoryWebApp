@@ -27,21 +27,11 @@ export default function App() {
 
   return (
     <SafeAreaView>
+      <StatusBar style="auto" />
       <SearchForm />
-      <View style={styles.container}>
-        <Text>{data}</Text>
-        <Text>Wilfredo & Thomas: Lets Begin!</Text>
-        <StatusBar style="auto" />
-      </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    height: 300,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
 });

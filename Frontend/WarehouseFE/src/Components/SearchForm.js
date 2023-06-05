@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { TextInput, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { SelectList } from 'react-native-dropdown-select-list';
+import { Table, Row, Rows } from 'react-native-table-component';
 
 function SearchForm() {
 
@@ -19,6 +20,8 @@ function SearchForm() {
         model: '',
         part: ''
     })
+
+    const [searchData, setSearchData] = React.useState([]);
 
     // data handles
     const handleModelChange = (val) => {
@@ -102,6 +105,23 @@ function SearchForm() {
                     <Text style={styles.searchText}>Search</Text>
                 </View>
             </TouchableOpacity>
+            <View>
+                <Text style={styles.resultText}>Results:</Text>
+            </View>
+            <View style={styles.searchResults}>
+                <Table>
+                    <Row
+                        data={['Column 1', 'Column 2', 'Column 3']}
+                        style={{ backgroundColor: '#f1f8ff' }}
+                        textStyle={{ fontWeight: 'bold' }}
+                    />
+                    <Rows
+                        data={searchData}
+                        textStyle={{ margin: 6 }}
+                        onPress={(rowIndex) => handleRowSelection(rowIndex)}
+                    />
+                </Table>
+            </View>
         </View>
     )
 
@@ -110,7 +130,7 @@ function SearchForm() {
 const styles = StyleSheet.create({
     searchForm: {
         backgroundColor: 'white',
-        height: 275,
+        height: 750,
         alignItems: 'center',
     },
     titleText: {
@@ -170,6 +190,16 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginTop: 8,
         fontSize: 24
+    },
+    resultText: {
+        fontSize: 25,
+        fontWeight: '600',
+        padding: 15,
+        marginTop: 75,
+        marginRight: 240
+    },
+    searchResults: {
+
     }
 })
 export default SearchForm;
