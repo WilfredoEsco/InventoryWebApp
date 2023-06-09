@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import SearchForm from './src/Components/SearchForm';
 
 export default function App() {
 
@@ -25,19 +26,12 @@ export default function App() {
   };
 
   return (
-    <View style={styles.container}>
-      <Text>{data}</Text>
-      <Text>Wilfredo & Thomas: Lets Begin!</Text>
+    <SafeAreaView>
       <StatusBar style="auto" />
-    </View>
+      <SearchForm />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
 });

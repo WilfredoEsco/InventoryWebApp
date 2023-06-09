@@ -12,6 +12,10 @@ app = Flask(__name__)
 def hello_world():
     return "International Used Autoparts!"
 
+##@app.route('/search', method=['GET'])
+##def search():
+
+
 @app.route('/users', methods=['GET'])
 def users_test():
 	international_cursor.execute('SELECT * FROM vehicles_at_lot where stk_number =1398;')
