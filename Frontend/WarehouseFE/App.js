@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import SearchForm from './src/Components/SearchForm';
+import SearchResults from './src/Components/SearchResults';
 
 export default function App() {
 
@@ -29,6 +30,7 @@ export default function App() {
     <SafeAreaView>
       <StatusBar style="auto" />
       <SearchForm />
+      <SearchResults/>
     </SafeAreaView>
   );
 }

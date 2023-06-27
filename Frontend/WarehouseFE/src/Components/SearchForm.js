@@ -7,13 +7,11 @@ import { Table, Row, Rows } from 'react-native-table-component';
 function SearchForm() {
 
     const partData = [
-        {key:'1', value:'Mobiles'},
-        {key:'2', value:'Appliances'},
-        {key:'3', value:'Cameras'},
-        {key:'4', value:'Computers'},
-        {key:'5', value:'Vegetables'},
-        {key:'6', value:'Diary Products'},
-        {key:'7', value:'Drinks'},
+        {key:'1', value:'Engine'},
+        {key:'2', value:'Transmission'},
+        {key:'3', value:'AC Compressor'},
+        {key:'4', value:'Alternator'},
+        {key:'5', value:'Starter'},
     ]
 
     const [data, setData] = React.useState({
