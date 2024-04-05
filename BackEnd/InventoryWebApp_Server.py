@@ -9,7 +9,7 @@ Debug = True
 app = Flask(__name__)
 
 # Test route - URL = '/test_route'
-@app.route('/')
+@app.route('/test_route')
 def Test_Route():
     return 'The server test is successful. InventoryWebApp server running.'
 
