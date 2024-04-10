@@ -2,19 +2,20 @@
 import Link from "next/link";
 import {useRouter} from "next/navigation";
 
-export default function Home(){
+export default function SearchPage(){
   const router = useRouter();
   const handleClick =()=>{
     console.log("YErrrr");
-    router.push("/login");
+    router.push("/HomePage");
   }
   
     return(
     <>
-    <button onClick ={handleClick}>Log In</button>
-    <h1>Welcome!</h1>
+    <button onClick ={handleClick}>Home</button>
+    <h1>Inventory Search Page</h1>
     </>
     
     );
   }
-
+  
+  

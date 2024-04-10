@@ -13,9 +13,10 @@ export default function RootLayout({
       <body>
         <header style = {{backgroundColor: "blue",
         padding: "1rem",}}>
-          <h1>International Used Auto Parts Inventory Manager</h1>
-          </header>{children}
-          <footer>Footer</footer>
+          <p>International Used Auto Parts Inventory Manager</p>
+          </header>
+          {children}
+         
           </body>
     </html>
   )
