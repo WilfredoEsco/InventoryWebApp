@@ -1,4 +1,4 @@
-"use client"
+
 import Link from "next/link";
 import {useRouter} from "next/navigation";
 
@@ -6,7 +6,7 @@ export default function SearchPage(){
   const router = useRouter();
   const handleClick =()=>{
     console.log("YErrrr");
-    router.push("/HomePage");
+    router.push("/DashBoard");
   }
   
     return(

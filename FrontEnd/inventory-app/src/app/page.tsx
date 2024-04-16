@@ -1,6 +1,11 @@
-"use client"
+
+
 import Link from "next/link";
 import {useRouter} from "next/navigation";
+import { Button } from "@nextui-org/react";
+import Image from "next/image";
+import logo from '../app/Resources/InternationalUAPLogo2.png'
+import { text } from "stream/consumers";
 
 export default function Home(){
   const router = useRouter();
@@ -11,8 +16,21 @@ export default function Home(){
   
     return(
     <>
-    <button onClick ={handleClick}>Log In</button>
-    <h1>Welcome!</h1>
+    <div style ={{ display:"flex",justifyContent:"center"}}>
+    <Image 
+    className="logo"
+    alt=""
+      src={logo}
+      width={500}
+      height={500}
+      />
+    </div>
+      <div style={{display:"flex",justifyContent:"center",backgroundColor:"black"}}>
+      <Button onClick ={handleClick} color ="primary">Log In</Button>
+      </div>
+   
+    
+    
     </>
     
     );

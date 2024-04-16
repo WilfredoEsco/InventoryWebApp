@@ -1,0 +1,18 @@
+.login_box {
+    text-align: center;
+    width:340px;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    margin: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    margin: 30px;
+    background-color: green;
+    border: 2px;
+    border-radius: 5px;
+    border-style: solid;
+}

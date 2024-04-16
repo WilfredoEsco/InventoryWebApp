@@ -1,12 +1,8 @@
-import { Metadata } from "next";
+'use client';
 
-export const metadata: Metadata={
-    title:{
-        absolute:"Log-In",
-    },
-}
-
-
+import LogInForm from "@/app/components/login-form";
 export default function login(){
-    return<h1>LogIN PAge</h1>
-}
+    return(
+        <LogInForm/>   
+        )
+      }
