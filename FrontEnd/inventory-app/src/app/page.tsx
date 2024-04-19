@@ -1,5 +1,5 @@
 
-
+'use client'
 import Link from "next/link";
 import {useRouter} from "next/navigation";
 import { Button } from "@nextui-org/react";
@@ -21,12 +21,12 @@ export default function Home(){
     className="logo"
     alt=""
       src={logo}
-      width={500}
-      height={500}
+      width={400}
+      height={40}
       />
     </div>
       <div style={{display:"flex",justifyContent:"center",backgroundColor:"black"}}>
-      <Button onClick ={handleClick} color ="primary">Log In</Button>
+      <Button onClick ={handleClick} color ="primary">Log In</Button> {/*this button takes you to the logIn page*/}
       </div>
    
     

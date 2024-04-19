@@ -1,0 +1,68 @@
+
+.boxDash{
+    background-color: black;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-style: solid;
+    border-radius: 5px; 
+}
+.card{
+    background-color: white;
+    justify-content: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: yellow;
+
+}
+.dashHeader{
+    font-size: 15px;
+}
+.searchNavButton{
+    background-color: gold;
+    color:black; 
+    padding: 8px;
+    border: 2px;
+    border-radius: 25px;
+   object-fit: cover;
+   margin-left: 20px;
+   size: 50vw, 100vw;
+    
+}
+
+.navAddPartsBu{
+    background-color: gold;
+    color:black; 
+    padding: 8px;
+    border: 2px;
+    border-radius: 15px;
+    object-fit: cover;
+    size: 50vw, 100vw;
+    top:-20px;
+    
+   
+}
+
+.navUpdateInvBu{
+    background-color: gold;
+    color:black; 
+    padding: 8px;
+    border: 2px;
+    border-radius: 25px;
+    object-fit: cover;
+    size: 50vw, 100v
+
+
+}
+
+.navAddCarsBu{
+    background-color: gold;
+    color:black; 
+    padding: 8px;
+    border: 2px;
+    border-radius: 25px;
+    object-fit: cover;
+    size: 50vw, 100v;
+  
+}

@@ -1,7 +1,7 @@
 .login_box {
     text-align: center;
     width:340px;
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     padding: 50px;
     margin: 130px;
@@ -16,3 +16,4 @@
     border-radius: 5px;
     border-style: solid;
 }
+
